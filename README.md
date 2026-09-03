@@ -55,7 +55,7 @@ All instruction prompts are **static system prompts**.
 Three steady-state examples are provided:
 
 1. **Heat-exchangers in series**  
-   Minimize total energy duty while enforcing \(T_\text{out} \ge 80^\circ\)C.  
+   Minimize total energy duty while enforcing T= 80° C.  
    The cooler duty is correctly driven to zero.
 
 2. **Three-stage nitrogen compression**  
