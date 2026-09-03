@@ -34,7 +34,7 @@ UniOpt is a multi-agent LLM pipeline that takes a converged steady-state **UniSi
           └──────────┬──────────┘
                      ▼
               Python + COM
-              (UniSim .usc)
+              
 ```
 
 ### Agents
