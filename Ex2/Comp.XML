@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CaseDefinition>
-	<CaseDescription crc32="16B215860">
+	<CaseDescription crc32="64F825AA0">
 		<DocumentType>HYSYS XML</DocumentType>
 		<XmlRecallVersion>2.0</XmlRecallVersion>
 		<CaseAuthor>UniSim Design (R460.1)</CaseAuthor>
 		<BuildNumber>21106</BuildNumber>
 		<CaseName>Comp</CaseName>
 		<CaseMode>SteadyState</CaseMode>
-		<GenerationDate>Friday Jul 10 2026, 11:45:56</GenerationDate>
+		<GenerationDate>Friday Oct 9 2026, 18:01:35</GenerationDate>
 		<!-- UniSim Design generates a full file, but will also read back partial files. -->
 		<!-- Note: DocumentType must be set for a file to be recognized. -->
 	</CaseDescription>
@@ -3069,7 +3069,7 @@
 			</Unit>
 		</UnitSet>
 	</CustomUnitSets>
-	<Basis crc32="29ABDB110">
+	<Basis crc32="65E6104D0">
 		<PropertyMapCollection OwnerType="FluidPkgMgrObject" OwnerName="" Type="ParamSet">
 			<NumMaps OwnerType="FluidPkgMgrObject" OwnerName="" Type="Param">
 				<Value>18</Value>
@@ -8537,7 +8537,7 @@
 					<Status>Specified</Status>
 				</FluidPackageName>
 				<FluidPackageType OwnerType="FluidPkgMgrObject" OwnerName="" Type="Param">
-					<Value>PengRobObject</Value>
+					<Value>NrtlObject</Value>
 					<ValueType>Text</ValueType>
 					<Status>Specified</Status>
 				</FluidPackageType>
@@ -8548,279 +8548,123 @@
 				</ComponentList>
 				<FluidPackageData OwnerType="FluidPkgMgrObject" OwnerName="" Type="ParamSet">
 					<PropertyPackage OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-						<Name OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>Peng-Robinson</Value>
-							<ValueType>Text</ValueType>
-							<Status>Specified</Status>
-						</Name>
-						<PropPackage OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>Peng-Robinson</Value>
-							<ValueType>Text</ValueType>
-							<Status>Specified</Status>
-						</PropPackage>
-						<ModifyCheuhPrausnitz OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>True</Value>
-							<ValueType>Boolean</ValueType>
-							<Status>Specified</Status>
-						</ModifyCheuhPrausnitz>
-						<SpecialTreatmentForWater OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>True</Value>
-							<ValueType>Boolean</ValueType>
-							<Status>Specified</Status>
-						</SpecialTreatmentForWater>
-						<UseFixedTcPcforTEG OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>False</Value>
-							<ValueType>Boolean</ValueType>
-							<Status>Specified</Status>
-						</UseFixedTcPcforTEG>
+						<HenryComponentVector OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
+							<IsHenryComponent OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
+								<Value>True</Value>
+								<ValueType>Boolean</ValueType>
+								<Status>Specified</Status>
+							</IsHenryComponent>
+						</HenryComponentVector>
+						<ActivetyBIPHenryMonikerMatrix OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
+							<EachHenryComponent OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
+							</EachHenryComponent>
+						</ActivetyBIPHenryMonikerMatrix>
 						<FPSetup OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-							<EOSEnthalpyMethodSpecs OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-								<Value>EOS</Value>
+							<VapourModel OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
+								<Value>Ideal</Value>
 								<ValueType>Text</ValueType>
 								<Status>Specified</Status>
-							</EOSEnthalpyMethodSpecs>
-						</FPSetup>
-						<BinaryCoefficients OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-							<Aij OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-								<Column OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-									<Component OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-										<Value>Nitrogen</Value>
-										<ValueType>Text</ValueType>
-										<Status>Specified</Status>
-									</Component>
-								</Column>
-							</Aij>
-							<AijMatrix OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-								<Column OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-									<Component OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-										<Value>Nitrogen</Value>
-										<ValueType>Text</ValueType>
-										<Status>Specified</Status>
-									</Component>
-								</Column>
-							</AijMatrix>
-							<BijMatrix OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-								<Column OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-									<Component OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-										<Value>Nitrogen</Value>
-										<ValueType>Text</ValueType>
-										<Status>Specified</Status>
-									</Component>
-								</Column>
-							</BijMatrix>
-							<CijMatrix OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-								<Column OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-									<Component OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-										<Value>Nitrogen</Value>
-										<ValueType>Text</ValueType>
-										<Status>Specified</Status>
-									</Component>
-								</Column>
-							</CijMatrix>
-							<DijMatrix OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-								<Column OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-									<Component OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-										<Value>Nitrogen</Value>
-										<ValueType>Text</ValueType>
-										<Status>Specified</Status>
-									</Component>
-								</Column>
-							</DijMatrix>
-							<EijMatrix OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-								<Column OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-									<Component OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-										<Value>Nitrogen</Value>
-										<ValueType>Text</ValueType>
-										<Status>Specified</Status>
-									</Component>
-								</Column>
-							</EijMatrix>
-							<FijMatrix OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-								<Column OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-									<Component OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-										<Value>Nitrogen</Value>
-										<ValueType>Text</ValueType>
-										<Status>Specified</Status>
-									</Component>
-								</Column>
-							</FijMatrix>
-						</BinaryCoefficients>
-						<PageNumber OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>0</Value>
-							<ValueType>Real</ValueType>
-							<Status>Specified</Status>
-						</PageNumber>
-						<TreatmentofInteractionCoefficients OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>False</Value>
-							<ValueType>Boolean</ValueType>
-							<Status>Specified</Status>
-						</TreatmentofInteractionCoefficients>
-						<UseEOSLiquidDensity OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>False</Value>
-							<ValueType>Boolean</ValueType>
-							<Status>Specified</Status>
-						</UseEOSLiquidDensity>
-						<SmoothLiquidDensity OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>True</Value>
-							<ValueType>Boolean</ValueType>
-							<Status>Specified</Status>
-						</SmoothLiquidDensity>
-						<ModifyH2CriticalProperties OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>True</Value>
-							<ValueType>Boolean</ValueType>
-							<Status>Specified</Status>
-						</ModifyH2CriticalProperties>
-						<UseWaterGasKij OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>False</Value>
-							<ValueType>Boolean</ValueType>
-							<Status>Specified</Status>
-						</UseWaterGasKij>
-						<HysysOptions OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>HYSYS</Value>
-							<ValueType>Text</ValueType>
-							<Status>Specified</Status>
-						</HysysOptions>
-						<DensityOptions OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>COSTALD</Value>
-							<ValueType>Text</ValueType>
-							<Status>Specified</Status>
-						</DensityOptions>
-						<ModifyTcAndPcOptions OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>Modify Tc, Pc for H2, He</Value>
-							<ValueType>Text</ValueType>
-							<Status>Specified</Status>
-						</ModifyTcAndPcOptions>
-						<UseWaterGasKijMatrix OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>Do Not Use Water Gas Kij</Value>
-							<ValueType>Text</ValueType>
-							<Status>Specified</Status>
-						</UseWaterGasKijMatrix>
-						<ViscosityOptions OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>HYSYS Viscosity</Value>
-							<ValueType>Text</ValueType>
-							<Status>Specified</Status>
-						</ViscosityOptions>
-						<DefaultOptions OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>COSTALD</Value>
-							<ValueType>Text</ValueType>
-							<Status>Specified</Status>
-						</DefaultOptions>
-						<PrPkgOptionsMatrix OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>0</Value>
-							<ValueType>Text</ValueType>
-							<Status>Specified</Status>
-						</PrPkgOptionsMatrix>
-						<BIPSpecialTreatment OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>True</Value>
-							<ValueType>Boolean</ValueType>
-							<Status>Specified</Status>
-						</BIPSpecialTreatment>
-						<PickedEquationCoefficient OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>False</Value>
-							<ValueType>Boolean</ValueType>
-							<Status>Specified</Status>
-						</PickedEquationCoefficient>
-						<PickedBIPOption OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>False</Value>
-							<ValueType>Boolean</ValueType>
-							<Status>Specified</Status>
-						</PickedBIPOption>
-						<PickedHVMixParameter OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>False</Value>
-							<ValueType>Boolean</ValueType>
-							<Status>Specified</Status>
-						</PickedHVMixParameter>
-						<BinaryCoefficients OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-							<TDepOptionMatrix OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-								<Column OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-									<Component OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-										<Value>Nitrogen</Value>
-										<ValueType>Text</ValueType>
-										<Status>Specified</Status>
-									</Component>
-								</Column>
-							</TDepOptionMatrix>
-						</BinaryCoefficients>
-						<EquationCoefficient OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>Aij</Value>
-							<ValueType>Text</ValueType>
-							<Status>Specified</Status>
-						</EquationCoefficient>
-						<BIPOption OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>Temperature Dependent</Value>
-							<ValueType>Text</ValueType>
-							<Status>Specified</Status>
-						</BIPOption>
-						<HVMixParameter OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>Aij</Value>
-							<ValueType>Text</ValueType>
-							<Status>Specified</Status>
-						</HVMixParameter>
-						<WaterSolubilityOptionMatrix OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>Equation of State</Value>
-							<ValueType>Text</ValueType>
-							<Status>Specified</Status>
-						</WaterSolubilityOptionMatrix>
-						<WaterSolubilityParametersForHCMatrix OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-						</WaterSolubilityParametersForHCMatrix>
-						<WaterSolubilityParametersForHCMatrixNew OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-							<WaterSolubilityForHCEstimateWsol OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
+							</VapourModel>
+							<ViscosityModel OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
+								<Value>HYSYS Viscosity</Value>
+								<ValueType>Text</ValueType>
+								<Status>Specified</Status>
+							</ViscosityModel>
+							<UNIFACEstimationTemp OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
+								<Value>25</Value>
+								<ValueType>Real</ValueType>
+								<Status>Specified</Status>
+							</UNIFACEstimationTemp>
+							<UsePoyntingCorrection OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
+								<Value>True</Value>
+								<ValueType>Boolean</ValueType>
+								<Status>Specified</Status>
+							</UsePoyntingCorrection>
+							<UseDimerizationEnthalpyForVirial OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
 								<Value>False</Value>
 								<ValueType>Boolean</ValueType>
 								<Status>Specified</Status>
-							</WaterSolubilityForHCEstimateWsol>
-						</WaterSolubilityParametersForHCMatrixNew>
-						<TemperatureVolumeTranslation OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>0</Value>
-							<ValueType>Text</ValueType>
-							<Status>Specified</Status>
-						</TemperatureVolumeTranslation>
-						<ImproveBIPOfH2SCO2 OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>False</Value>
-							<ValueType>Boolean</ValueType>
-							<Status>Specified</Status>
-						</ImproveBIPOfH2SCO2>
-						<NBS_H2O_H2_VaporViscosityThermalConductivity OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>0</Value>
-							<ValueType>Text</ValueType>
-							<Status>Specified</Status>
-						</NBS_H2O_H2_VaporViscosityThermalConductivity>
-						<ImprovedSourOptionMatrix OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>0</Value>
-							<ValueType>Text</ValueType>
-							<Status>Specified</Status>
-						</ImprovedSourOptionMatrix>
-						<UseR410ForGlycol OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>False</Value>
-							<ValueType>Boolean</ValueType>
-							<Status>Specified</Status>
-						</UseR410ForGlycol>
-						<BinaryCoefficients2 OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-							<PPR78OptionMatrix OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-								<Column OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
-									<Component OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-										<Value>Nitrogen</Value>
-										<ValueType>Text</ValueType>
-										<Status>Specified</Status>
-									</Component>
-								</Column>
-							</PPR78OptionMatrix>
-						</BinaryCoefficients2>
-						<ImproveBIPOfH2HYPO OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>False</Value>
-							<ValueType>Boolean</ValueType>
-							<Status>Specified</Status>
-						</ImproveBIPOfH2HYPO>
-						<AskUserOldorNewWay OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>-1</Value>
-							<ValueType>Text</ValueType>
-							<Status>Specified</Status>
-						</AskUserOldorNewWay>
-						<UserOldReestimation OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
-							<Value>False</Value>
-							<ValueType>Boolean</ValueType>
-							<Status>Specified</Status>
-						</UserOldReestimation>
+							</UseDimerizationEnthalpyForVirial>
+							<MakeNONHCEnthMonInCVT OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
+								<Value>False</Value>
+								<ValueType>Boolean</ValueType>
+								<Status>Specified</Status>
+							</MakeNONHCEnthMonInCVT>
+							<LiquidDensityModel OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
+								<Value>COSTALD</Value>
+								<ValueType>Text</ValueType>
+								<Status>Specified</Status>
+							</LiquidDensityModel>
+							<HenryConstantOption OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
+								<Value>Legacy Default</Value>
+								<ValueType>Text</ValueType>
+								<Status>Specified</Status>
+							</HenryConstantOption>
+							<HenryCoeffNeedReEstimate OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
+								<Value>False</Value>
+								<ValueType>Boolean</ValueType>
+								<Status>Specified</Status>
+							</HenryCoeffNeedReEstimate>
+							<Name OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
+								<Value>NRTL - Ideal</Value>
+								<ValueType>Text</ValueType>
+								<Status>Specified</Status>
+							</Name>
+							<PropPackage OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
+								<Value>NRTL</Value>
+								<ValueType>Text</ValueType>
+								<Status>Specified</Status>
+							</PropPackage>
+							<ModifyCheuhPrausnitz OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
+								<Value>True</Value>
+								<ValueType>Boolean</ValueType>
+								<Status>Specified</Status>
+							</ModifyCheuhPrausnitz>
+							<SpecialTreatmentForWater OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
+								<Value>True</Value>
+								<ValueType>Boolean</ValueType>
+								<Status>Specified</Status>
+							</SpecialTreatmentForWater>
+							<UseFixedTcPcforTEG OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
+								<Value>False</Value>
+								<ValueType>Boolean</ValueType>
+								<Status>Specified</Status>
+							</UseFixedTcPcforTEG>
+							<BinaryCoefficients OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
+								<Aij OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
+									<Column OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
+										<Component OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
+											<Value>Nitrogen</Value>
+											<ValueType>Text</ValueType>
+											<Status>Specified</Status>
+										</Component>
+									</Column>
+								</Aij>
+								<Bij OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
+									<Column OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
+										<Component OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
+											<Value>Nitrogen</Value>
+											<ValueType>Text</ValueType>
+											<Status>Specified</Status>
+										</Component>
+									</Column>
+								</Bij>
+								<Cij OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
+									<Column OwnerType="CompListObject" OwnerName="Basis-1" Type="ParamSet">
+										<Component OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
+											<Value>Nitrogen</Value>
+											<ValueType>Text</ValueType>
+											<Status>Specified</Status>
+										</Component>
+									</Column>
+								</Cij>
+							</BinaryCoefficients>
+							<PageNumber OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
+								<Value>0</Value>
+								<ValueType>Real</ValueType>
+								<Status>Specified</Status>
+							</PageNumber>
+						</FPSetup>
 					</PropertyPackage>
 					<EstimationMethod OwnerType="CompListObject" OwnerName="Basis-1" Type="Param">
 						<Value>UNIFAC VLE</Value>
@@ -9563,15 +9407,15 @@
 			</PageNumber>
 		</FlowSheet>
 	</FlowSheets>
-	<FlowSheetObjects crc32="E982E6110">
+	<FlowSheetObjects crc32="9C26E9600">
 		<!-- This section contains data for all objects. -->
 		<!-- Objects will be created if they do not already exist. -->
-		<MaterialStreamObject crc32="A2300B920">
+		<MaterialStreamObject crc32="D2863CFF0">
 			<Name>Feed1</Name>
 			<TaggedName>Feed1</TaggedName>
 			<Type>MaterialStreamObject</Type>
 			<IsSolved>True</IsSolved>
-			<MaterialStreamObjectParams crc32="8EBED2B90">
+			<MaterialStreamObjectParams crc32="90E1507E0">
 				<IsIgnored OwnerType="MaterialStreamObject" OwnerName="Feed1" Type="Param">
 					<Value>False</Value>
 					<ValueType>Boolean</ValueType>
@@ -9802,7 +9646,7 @@
 				</TemperatureEstimate>
 				<EnthalpyEstimate OwnerType="MaterialStreamObject" OwnerName="Feed1" Type="ParamSet">
 					<StreamEstimateValue OwnerType="MaterialStreamObject" OwnerName="Feed1" Type="Param">
-						<Value>-7.6707742820864</Value>
+						<Value>0</Value>
 						<ValueType>Real</ValueType>
 						<Status>Specified</Status>
 					</StreamEstimateValue>
@@ -9955,12 +9799,12 @@
 				</ControlValve>
 			</EnergyStreamObjectParams>
 		</EnergyStreamObject>
-		<MaterialStreamObject crc32="3918B2AB0">
+		<MaterialStreamObject crc32="58981C0F0">
 			<Name>Mid1</Name>
 			<TaggedName>Mid1</TaggedName>
 			<Type>MaterialStreamObject</Type>
 			<IsSolved>True</IsSolved>
-			<MaterialStreamObjectParams crc32="D39839420">
+			<MaterialStreamObjectParams crc32="B62F3E3F0">
 				<IsIgnored OwnerType="MaterialStreamObject" OwnerName="Mid1" Type="Param">
 					<Value>False</Value>
 					<ValueType>Boolean</ValueType>
@@ -10122,7 +9966,7 @@
 				</FlowEstimate>
 				<TemperatureEstimate OwnerType="MaterialStreamObject" OwnerName="Mid1" Type="ParamSet">
 					<StreamEstimateValue OwnerType="MaterialStreamObject" OwnerName="Mid1" Type="Param">
-						<Value>133.69816015302</Value>
+						<Value>133.58651193643</Value>
 						<ValueType>Real</ValueType>
 						<Status>Specified</Status>
 					</StreamEstimateValue>
@@ -10134,7 +9978,7 @@
 				</TemperatureEstimate>
 				<EnthalpyEstimate OwnerType="MaterialStreamObject" OwnerName="Mid1" Type="ParamSet">
 					<StreamEstimateValue OwnerType="MaterialStreamObject" OwnerName="Mid1" Type="Param">
-						<Value>3187.9255895118</Value>
+						<Value>3195.2708382807</Value>
 						<ValueType>Real</ValueType>
 						<Status>Specified</Status>
 					</StreamEstimateValue>
@@ -10179,12 +10023,12 @@
 				</PhaseOption>
 			</MaterialStreamObjectParams>
 		</MaterialStreamObject>
-		<MaterialStreamObject crc32="3B9E262A0">
+		<MaterialStreamObject crc32="27DB1BCD0">
 			<Name>Feed2</Name>
 			<TaggedName>Feed2</TaggedName>
 			<Type>MaterialStreamObject</Type>
 			<IsSolved>True</IsSolved>
-			<MaterialStreamObjectParams crc32="8B958D990">
+			<MaterialStreamObjectParams crc32="929B0B6D0">
 				<IsIgnored OwnerType="MaterialStreamObject" OwnerName="Feed2" Type="Param">
 					<Value>False</Value>
 					<ValueType>Boolean</ValueType>
@@ -10358,7 +10202,7 @@
 				</TemperatureEstimate>
 				<EnthalpyEstimate OwnerType="MaterialStreamObject" OwnerName="Feed2" Type="ParamSet">
 					<StreamEstimateValue OwnerType="MaterialStreamObject" OwnerName="Feed2" Type="Param">
-						<Value>-22.939378554664</Value>
+						<Value>0</Value>
 						<ValueType>Real</ValueType>
 						<Status>Specified</Status>
 					</StreamEstimateValue>
@@ -10521,12 +10365,12 @@
 				</ControlValve>
 			</EnergyStreamObjectParams>
 		</EnergyStreamObject>
-		<MaterialStreamObject crc32="58DA17D70">
+		<MaterialStreamObject crc32="4F8E49A10">
 			<Name>Mid2</Name>
 			<TaggedName>Mid2</TaggedName>
 			<Type>MaterialStreamObject</Type>
 			<IsSolved>True</IsSolved>
-			<MaterialStreamObjectParams crc32="4B2C5E5E0">
+			<MaterialStreamObjectParams crc32="E70F7C460">
 				<IsIgnored OwnerType="MaterialStreamObject" OwnerName="Mid2" Type="Param">
 					<Value>False</Value>
 					<ValueType>Boolean</ValueType>
@@ -10688,7 +10532,7 @@
 				</FlowEstimate>
 				<TemperatureEstimate OwnerType="MaterialStreamObject" OwnerName="Mid2" Type="ParamSet">
 					<StreamEstimateValue OwnerType="MaterialStreamObject" OwnerName="Mid2" Type="Param">
-						<Value>89.975650204862</Value>
+						<Value>89.797161629464</Value>
 						<ValueType>Real</ValueType>
 						<Status>Specified</Status>
 					</StreamEstimateValue>
@@ -10700,7 +10544,7 @@
 				</TemperatureEstimate>
 				<EnthalpyEstimate OwnerType="MaterialStreamObject" OwnerName="Mid2" Type="ParamSet">
 					<StreamEstimateValue OwnerType="MaterialStreamObject" OwnerName="Mid2" Type="Param">
-						<Value>1875.5156053921</Value>
+						<Value>1899.2447463582</Value>
 						<ValueType>Real</ValueType>
 						<Status>Specified</Status>
 					</StreamEstimateValue>
@@ -10853,12 +10697,12 @@
 				</ControlValve>
 			</EnergyStreamObjectParams>
 		</EnergyStreamObject>
-		<MaterialStreamObject crc32="AF9AAF160">
+		<MaterialStreamObject crc32="4B897F3B0">
 			<Name>Feed3</Name>
 			<TaggedName>Feed3</TaggedName>
 			<Type>MaterialStreamObject</Type>
 			<IsSolved>True</IsSolved>
-			<MaterialStreamObjectParams crc32="757511080">
+			<MaterialStreamObjectParams crc32="2CD846C00">
 				<IsIgnored OwnerType="MaterialStreamObject" OwnerName="Feed3" Type="Param">
 					<Value>False</Value>
 					<ValueType>Boolean</ValueType>
@@ -11032,7 +10876,7 @@
 				</TemperatureEstimate>
 				<EnthalpyEstimate OwnerType="MaterialStreamObject" OwnerName="Feed3" Type="ParamSet">
 					<StreamEstimateValue OwnerType="MaterialStreamObject" OwnerName="Feed3" Type="Param">
-						<Value>-45.65866775961</Value>
+						<Value>0</Value>
 						<ValueType>Real</ValueType>
 						<Status>Specified</Status>
 					</StreamEstimateValue>
@@ -11195,12 +11039,12 @@
 				</ControlValve>
 			</EnergyStreamObjectParams>
 		</EnergyStreamObject>
-		<MaterialStreamObject crc32="9F1D249A0">
+		<MaterialStreamObject crc32="CD8EC4530">
 			<Name>Output</Name>
 			<TaggedName>Output</TaggedName>
 			<Type>MaterialStreamObject</Type>
 			<IsSolved>True</IsSolved>
-			<MaterialStreamObjectParams crc32="D13E1CFE0">
+			<MaterialStreamObjectParams crc32="A54E18150">
 				<IsIgnored OwnerType="MaterialStreamObject" OwnerName="Output" Type="Param">
 					<Value>False</Value>
 					<ValueType>Boolean</ValueType>
@@ -11364,7 +11208,7 @@
 				</FlowEstimate>
 				<TemperatureEstimate OwnerType="MaterialStreamObject" OwnerName="Output" Type="ParamSet">
 					<StreamEstimateValue OwnerType="MaterialStreamObject" OwnerName="Output" Type="Param">
-						<Value>71.816961338417</Value>
+						<Value>71.579513311557</Value>
 						<ValueType>Real</ValueType>
 						<Status>Specified</Status>
 					</StreamEstimateValue>
@@ -11376,7 +11220,7 @@
 				</TemperatureEstimate>
 				<EnthalpyEstimate OwnerType="MaterialStreamObject" OwnerName="Output" Type="ParamSet">
 					<StreamEstimateValue OwnerType="MaterialStreamObject" OwnerName="Output" Type="Param">
-						<Value>1315.5574490643</Value>
+						<Value>1363.0300748419</Value>
 						<ValueType>Real</ValueType>
 						<Status>Specified</Status>
 					</StreamEstimateValue>
@@ -11529,12 +11373,12 @@
 				</ControlValve>
 			</EnergyStreamObjectParams>
 		</EnergyStreamObject>
-		<CoolerOpObject crc32="BFD634EE0">
+		<CoolerOpObject crc32="50CE01890">
 			<Name>E-100</Name>
 			<TaggedName>E-100</TaggedName>
 			<Type>CoolerOpObject</Type>
 			<IsSolved>True</IsSolved>
-			<CoolerOpObjectParams crc32="FA415A480">
+			<CoolerOpObjectParams crc32="6EA2005E0">
 				<IsIgnored OwnerType="CoolerOpObject" OwnerName="E-100" Type="Param">
 					<Value>False</Value>
 					<ValueType>Boolean</ValueType>
@@ -11611,7 +11455,7 @@
 						<Status>Specified</Status>
 					</ParentFlowSheetName>
 					<DeltaT OwnerType="TwoStreamExchSideObject" OwnerName="E-100" Type="Param">
-						<Value>-108.69816015302</Value>
+						<Value>-108.58651193643</Value>
 						<ValueType>Real</ValueType>
 						<Status>Specified</Status>
 						<ProcVarStatus>Calculated</ProcVarStatus>
@@ -14083,12 +13927,12 @@
 				</CompressorUpdateCompressorSpeedWithNominalValues>
 			</CompressorObjectParams>
 		</CompressorObject>
-		<CoolerOpObject crc32="FFBA4DAD0">
+		<CoolerOpObject crc32="0AE9FF960">
 			<Name>E-101</Name>
 			<TaggedName>E-101</TaggedName>
 			<Type>CoolerOpObject</Type>
 			<IsSolved>True</IsSolved>
-			<CoolerOpObjectParams crc32="EAA1BF250">
+			<CoolerOpObjectParams crc32="05E8C9260">
 				<IsIgnored OwnerType="CoolerOpObject" OwnerName="E-101" Type="Param">
 					<Value>False</Value>
 					<ValueType>Boolean</ValueType>
@@ -14165,7 +14009,7 @@
 						<Status>Specified</Status>
 					</ParentFlowSheetName>
 					<DeltaT OwnerType="TwoStreamExchSideObject" OwnerName="E-101" Type="Param">
-						<Value>-64.975650204862</Value>
+						<Value>-64.797161629464</Value>
 						<ValueType>Real</ValueType>
 						<Status>Specified</Status>
 						<ProcVarStatus>Calculated</ProcVarStatus>
@@ -15572,7 +15416,7 @@
 			</CompressorObjectParams>
 		</CompressorObject>
 	</FlowSheetObjects>
-	<CaseProperties crc32="46177A960">
+	<CaseProperties crc32="786C97D90">
 		<CaseFlowShtName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
 			<Value>Case</Value>
 			<ValueType>Text</ValueType>
@@ -15923,6 +15767,1137 @@
 				<ValueType>Boolean</ValueType>
 				<Status>Specified</Status>
 			</GlobalStreamCorrSetModStatus>
+			<InActiveStreamCorrsWithConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+				<InactiveStreamCorrName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Wobbe Index</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrName>
+				<InactiveStreamCorrDispName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Wobbe Index</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrDispName>
+				<InactiveStreamCorrCLSID OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>{A29D9266-5B20-4ca8-9605-A21CEE5A4ADE}</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrCLSID>
+				<InactiveStreamCorrVarDesc OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>:</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrVarDesc>
+				<InactiveStreamCorrImplSubst OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Gas</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrImplSubst>
+				<InactiveStreamCorrStatus OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrStatus>
+				<InactiveStreamCorrInUse OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrInUse>
+				<InactiveStreamCorrBulkProp OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrBulkProp>
+				<InactiveStreamCorrIsClone OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrIsClone>
+				<ConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+					<VariableCount OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+						<Value>1</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</VariableCount>
+					<Variable OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+						<VarType OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Enum</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarType>
+						<VarName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Combustion/Metering Ref. Temp. Option</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarName>
+						<VarValue OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>0</Value>
+							<ValueType>Real</ValueType>
+							<Status>Specified</Status>
+						</VarValue>
+					</Variable>
+				</ConfigVars>
+			</InActiveStreamCorrsWithConfigVars>
+			<InActiveStreamCorrsWithConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+				<InactiveStreamCorrName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Mass Density (Std. Cond)</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrName>
+				<InactiveStreamCorrDispName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Mass Density (Std. Cond)</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrDispName>
+				<InactiveStreamCorrCLSID OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>{2A4C3FB0-2717-45ff-91BE-ACA542F7393C}</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrCLSID>
+				<InactiveStreamCorrVarDesc OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>:</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrVarDesc>
+				<InactiveStreamCorrImplSubst OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Gas</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrImplSubst>
+				<InactiveStreamCorrStatus OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrStatus>
+				<InactiveStreamCorrInUse OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrInUse>
+				<InactiveStreamCorrBulkProp OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrBulkProp>
+				<InactiveStreamCorrIsClone OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrIsClone>
+				<ConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+					<VariableCount OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+						<Value>1</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</VariableCount>
+					<Variable OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+						<VarType OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Enum</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarType>
+						<VarName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Combustion/Metering Ref. Temp. Option</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarName>
+						<VarValue OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>0</Value>
+							<ValueType>Real</ValueType>
+							<Status>Specified</Status>
+						</VarValue>
+					</Variable>
+				</ConfigVars>
+			</InActiveStreamCorrsWithConfigVars>
+			<InActiveStreamCorrsWithConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+				<InactiveStreamCorrName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Volume Higher Heating Value</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrName>
+				<InactiveStreamCorrDispName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Volume Higher Heating Value</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrDispName>
+				<InactiveStreamCorrCLSID OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>{E2B763D3-E753-432e-B7EB-E92647629DE8}</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrCLSID>
+				<InactiveStreamCorrVarDesc OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>:</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrVarDesc>
+				<InactiveStreamCorrImplSubst OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Gas</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrImplSubst>
+				<InactiveStreamCorrStatus OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrStatus>
+				<InactiveStreamCorrInUse OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrInUse>
+				<InactiveStreamCorrBulkProp OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrBulkProp>
+				<InactiveStreamCorrIsClone OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrIsClone>
+				<ConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+					<VariableCount OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+						<Value>1</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</VariableCount>
+					<Variable OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+						<VarType OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Enum</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarType>
+						<VarName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Combustion/Metering Ref. Temp. Option</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarName>
+						<VarValue OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>0</Value>
+							<ValueType>Real</ValueType>
+							<Status>Specified</Status>
+						</VarValue>
+					</Variable>
+				</ConfigVars>
+			</InActiveStreamCorrsWithConfigVars>
+			<InActiveStreamCorrsWithConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+				<InactiveStreamCorrName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Mass Higher Heating Value</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrName>
+				<InactiveStreamCorrDispName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Mass Higher Heating Value</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrDispName>
+				<InactiveStreamCorrCLSID OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>{6F0DC8C3-4C56-47D1-BF7B-2915AADE908B}</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrCLSID>
+				<InactiveStreamCorrVarDesc OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>:</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrVarDesc>
+				<InactiveStreamCorrImplSubst OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Gas</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrImplSubst>
+				<InactiveStreamCorrStatus OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrStatus>
+				<InactiveStreamCorrInUse OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrInUse>
+				<InactiveStreamCorrBulkProp OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrBulkProp>
+				<InactiveStreamCorrIsClone OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrIsClone>
+				<ConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+					<VariableCount OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+						<Value>1</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</VariableCount>
+					<Variable OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+						<VarType OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Enum</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarType>
+						<VarName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Combustion/Metering Ref. Temp. Option</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarName>
+						<VarValue OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>0</Value>
+							<ValueType>Real</ValueType>
+							<Status>Specified</Status>
+						</VarValue>
+					</Variable>
+				</ConfigVars>
+			</InActiveStreamCorrsWithConfigVars>
+			<InActiveStreamCorrsWithConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+				<InactiveStreamCorrName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Molar Higher Heating Value</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrName>
+				<InactiveStreamCorrDispName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Molar Higher Heating Value</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrDispName>
+				<InactiveStreamCorrCLSID OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>{00761E39-826F-4E29-86C6-9F89391EAFA8}</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrCLSID>
+				<InactiveStreamCorrVarDesc OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>:</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrVarDesc>
+				<InactiveStreamCorrImplSubst OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Gas</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrImplSubst>
+				<InactiveStreamCorrStatus OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrStatus>
+				<InactiveStreamCorrInUse OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrInUse>
+				<InactiveStreamCorrBulkProp OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrBulkProp>
+				<InactiveStreamCorrIsClone OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrIsClone>
+				<ConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+					<VariableCount OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+						<Value>1</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</VariableCount>
+					<Variable OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+						<VarType OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Enum</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarType>
+						<VarName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Combustion/Metering Ref. Temp. Option</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarName>
+						<VarValue OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>0</Value>
+							<ValueType>Real</ValueType>
+							<Status>Specified</Status>
+						</VarValue>
+					</Variable>
+				</ConfigVars>
+			</InActiveStreamCorrsWithConfigVars>
+			<InActiveStreamCorrsWithConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+				<InactiveStreamCorrName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Volume Lower Heating Value</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrName>
+				<InactiveStreamCorrDispName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Volume Lower Heating Value</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrDispName>
+				<InactiveStreamCorrCLSID OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>{52186484-94F0-4fdd-A981-B4AEF46266CD}</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrCLSID>
+				<InactiveStreamCorrVarDesc OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>:</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrVarDesc>
+				<InactiveStreamCorrImplSubst OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Gas</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrImplSubst>
+				<InactiveStreamCorrStatus OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrStatus>
+				<InactiveStreamCorrInUse OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrInUse>
+				<InactiveStreamCorrBulkProp OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrBulkProp>
+				<InactiveStreamCorrIsClone OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrIsClone>
+				<ConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+					<VariableCount OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+						<Value>1</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</VariableCount>
+					<Variable OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+						<VarType OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Enum</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarType>
+						<VarName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Combustion/Metering Ref. Temp. Option</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarName>
+						<VarValue OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>0</Value>
+							<ValueType>Real</ValueType>
+							<Status>Specified</Status>
+						</VarValue>
+					</Variable>
+				</ConfigVars>
+			</InActiveStreamCorrsWithConfigVars>
+			<InActiveStreamCorrsWithConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+				<InactiveStreamCorrName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Mass Lower Heating Value</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrName>
+				<InactiveStreamCorrDispName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Mass Lower Heating Value</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrDispName>
+				<InactiveStreamCorrCLSID OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>{B6A916D4-7916-484C-A110-E47963C14A03}</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrCLSID>
+				<InactiveStreamCorrVarDesc OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>:</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrVarDesc>
+				<InactiveStreamCorrImplSubst OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Gas</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrImplSubst>
+				<InactiveStreamCorrStatus OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrStatus>
+				<InactiveStreamCorrInUse OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrInUse>
+				<InactiveStreamCorrBulkProp OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrBulkProp>
+				<InactiveStreamCorrIsClone OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrIsClone>
+				<ConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+					<VariableCount OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+						<Value>1</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</VariableCount>
+					<Variable OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+						<VarType OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Enum</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarType>
+						<VarName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Combustion/Metering Ref. Temp. Option</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarName>
+						<VarValue OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>0</Value>
+							<ValueType>Real</ValueType>
+							<Status>Specified</Status>
+						</VarValue>
+					</Variable>
+				</ConfigVars>
+			</InActiveStreamCorrsWithConfigVars>
+			<InActiveStreamCorrsWithConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+				<InactiveStreamCorrName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Molar Lower Heating Value</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrName>
+				<InactiveStreamCorrDispName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Molar Lower Heating Value</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrDispName>
+				<InactiveStreamCorrCLSID OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>{C1F49A93-EC54-49F2-9B6D-CE8C6F724CA6}</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrCLSID>
+				<InactiveStreamCorrVarDesc OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>:</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrVarDesc>
+				<InactiveStreamCorrImplSubst OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Gas</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrImplSubst>
+				<InactiveStreamCorrStatus OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrStatus>
+				<InactiveStreamCorrInUse OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrInUse>
+				<InactiveStreamCorrBulkProp OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrBulkProp>
+				<InactiveStreamCorrIsClone OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrIsClone>
+				<ConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+					<VariableCount OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+						<Value>1</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</VariableCount>
+					<Variable OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+						<VarType OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Enum</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarType>
+						<VarName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Combustion/Metering Ref. Temp. Option</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarName>
+						<VarValue OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>0</Value>
+							<ValueType>Real</ValueType>
+							<Status>Specified</Status>
+						</VarValue>
+					</Variable>
+				</ConfigVars>
+			</InActiveStreamCorrsWithConfigVars>
+			<InActiveStreamCorrsWithConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+				<InactiveStreamCorrName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>API 5B1.1</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrName>
+				<InactiveStreamCorrDispName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>API 5B1.1</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrDispName>
+				<InactiveStreamCorrCLSID OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>{E267EB79-72C3-4332-8ECE-83B62FCE82D7}</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrCLSID>
+				<InactiveStreamCorrVarDesc OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>:</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrVarDesc>
+				<InactiveStreamCorrImplSubst OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>RVP</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrImplSubst>
+				<InactiveStreamCorrStatus OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrStatus>
+				<InactiveStreamCorrInUse OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrInUse>
+				<InactiveStreamCorrBulkProp OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrBulkProp>
+				<InactiveStreamCorrIsClone OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrIsClone>
+				<ConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+					<VariableCount OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+						<Value>1</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</VariableCount>
+					<Variable OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+						<VarType OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Numeric</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarType>
+						<VarName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Ref.Temp.(C)</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarName>
+						<VarValue OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>37.78</Value>
+							<ValueType>Real</ValueType>
+							<Status>Specified</Status>
+						</VarValue>
+					</Variable>
+				</ConfigVars>
+			</InActiveStreamCorrsWithConfigVars>
+			<InActiveStreamCorrsWithConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+				<InactiveStreamCorrName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>API 5B1.2</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrName>
+				<InactiveStreamCorrDispName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>API 5B1.2</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrDispName>
+				<InactiveStreamCorrCLSID OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>{BCF59063-41EE-40a4-BBAE-DC3F2129C859}</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrCLSID>
+				<InactiveStreamCorrVarDesc OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>:</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrVarDesc>
+				<InactiveStreamCorrImplSubst OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>RVP</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrImplSubst>
+				<InactiveStreamCorrStatus OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrStatus>
+				<InactiveStreamCorrInUse OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrInUse>
+				<InactiveStreamCorrBulkProp OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrBulkProp>
+				<InactiveStreamCorrIsClone OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrIsClone>
+				<ConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+					<VariableCount OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+						<Value>1</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</VariableCount>
+					<Variable OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+						<VarType OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Numeric</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarType>
+						<VarName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Ref.Temp.(C)</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarName>
+						<VarValue OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>37.78</Value>
+							<ValueType>Real</ValueType>
+							<Status>Specified</Status>
+						</VarValue>
+					</Variable>
+				</ConfigVars>
+			</InActiveStreamCorrsWithConfigVars>
+			<InActiveStreamCorrsWithConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+				<InactiveStreamCorrName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>ASTM D323-73/79</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrName>
+				<InactiveStreamCorrDispName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>ASTM D323-73/79</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrDispName>
+				<InactiveStreamCorrCLSID OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>{E82F470A-BE75-4bd9-9D6E-1601360FB290}</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrCLSID>
+				<InactiveStreamCorrVarDesc OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>:</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrVarDesc>
+				<InactiveStreamCorrImplSubst OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>RVP</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrImplSubst>
+				<InactiveStreamCorrStatus OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrStatus>
+				<InactiveStreamCorrInUse OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrInUse>
+				<InactiveStreamCorrBulkProp OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrBulkProp>
+				<InactiveStreamCorrIsClone OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrIsClone>
+				<ConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+					<VariableCount OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+						<Value>1</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</VariableCount>
+					<Variable OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+						<VarType OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Numeric</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarType>
+						<VarName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Ref.Temp.(C)</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarName>
+						<VarValue OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>37.78</Value>
+							<ValueType>Real</ValueType>
+							<Status>Specified</Status>
+						</VarValue>
+					</Variable>
+				</ConfigVars>
+			</InActiveStreamCorrsWithConfigVars>
+			<InActiveStreamCorrsWithConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+				<InactiveStreamCorrName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>ASTM D323-82</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrName>
+				<InactiveStreamCorrDispName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>ASTM D323-82</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrDispName>
+				<InactiveStreamCorrCLSID OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>{6B0FF6FF-E19D-4c30-AB15-1FB0F415EF02}</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrCLSID>
+				<InactiveStreamCorrVarDesc OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>:</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrVarDesc>
+				<InactiveStreamCorrImplSubst OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>RVP</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrImplSubst>
+				<InactiveStreamCorrStatus OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrStatus>
+				<InactiveStreamCorrInUse OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrInUse>
+				<InactiveStreamCorrBulkProp OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrBulkProp>
+				<InactiveStreamCorrIsClone OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrIsClone>
+				<ConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+					<VariableCount OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+						<Value>1</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</VariableCount>
+					<Variable OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+						<VarType OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Numeric</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarType>
+						<VarName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Ref.Temp.(C)</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarName>
+						<VarValue OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>37.78</Value>
+							<ValueType>Real</ValueType>
+							<Status>Specified</Status>
+						</VarValue>
+					</Variable>
+				</ConfigVars>
+			</InActiveStreamCorrsWithConfigVars>
+			<InActiveStreamCorrsWithConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+				<InactiveStreamCorrName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>ASTM D4953-91</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrName>
+				<InactiveStreamCorrDispName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>ASTM D4953-91</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrDispName>
+				<InactiveStreamCorrCLSID OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>{63C754B4-E868-4924-9364-C0F0287BCBFB}</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrCLSID>
+				<InactiveStreamCorrVarDesc OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>:</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrVarDesc>
+				<InactiveStreamCorrImplSubst OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>RVP</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrImplSubst>
+				<InactiveStreamCorrStatus OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrStatus>
+				<InactiveStreamCorrInUse OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrInUse>
+				<InactiveStreamCorrBulkProp OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrBulkProp>
+				<InactiveStreamCorrIsClone OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrIsClone>
+				<ConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+					<VariableCount OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+						<Value>1</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</VariableCount>
+					<Variable OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+						<VarType OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Numeric</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarType>
+						<VarName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Ref.Temp.(C)</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarName>
+						<VarValue OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>37.78</Value>
+							<ValueType>Real</ValueType>
+							<Status>Specified</Status>
+						</VarValue>
+					</Variable>
+				</ConfigVars>
+			</InActiveStreamCorrsWithConfigVars>
+			<InActiveStreamCorrsWithConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+				<InactiveStreamCorrName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>ASTM D5191-91</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrName>
+				<InactiveStreamCorrDispName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>ASTM D5191-91</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrDispName>
+				<InactiveStreamCorrCLSID OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>{3CE04AE4-2840-417c-B50E-AD7BEA4FC4FA}</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrCLSID>
+				<InactiveStreamCorrVarDesc OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>:</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrVarDesc>
+				<InactiveStreamCorrImplSubst OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>RVP</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrImplSubst>
+				<InactiveStreamCorrStatus OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrStatus>
+				<InactiveStreamCorrInUse OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrInUse>
+				<InactiveStreamCorrBulkProp OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrBulkProp>
+				<InactiveStreamCorrIsClone OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrIsClone>
+				<ConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+					<VariableCount OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+						<Value>1</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</VariableCount>
+					<Variable OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+						<VarType OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Numeric</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarType>
+						<VarName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Ref.Temp.(C)</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarName>
+						<VarValue OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>37.78</Value>
+							<ValueType>Real</ValueType>
+							<Status>Specified</Status>
+						</VarValue>
+					</Variable>
+				</ConfigVars>
+			</InActiveStreamCorrsWithConfigVars>
+			<InActiveStreamCorrsWithConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+				<InactiveStreamCorrName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Cost Based on Flow</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrName>
+				<InactiveStreamCorrDispName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Cost Based on Flow</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrDispName>
+				<InactiveStreamCorrCLSID OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>{CB9F4EFC-5401-4ed5-A6BD-DDBD90763BF7}</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrCLSID>
+				<InactiveStreamCorrVarDesc OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>:</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrVarDesc>
+				<InactiveStreamCorrImplSubst OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Standard</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrImplSubst>
+				<InactiveStreamCorrStatus OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrStatus>
+				<InactiveStreamCorrInUse OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrInUse>
+				<InactiveStreamCorrBulkProp OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrBulkProp>
+				<InactiveStreamCorrIsClone OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrIsClone>
+				<ConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+					<VariableCount OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+						<Value>1</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</VariableCount>
+					<Variable OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+						<VarType OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Numeric</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarType>
+						<VarName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Fuel Oil CV</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarName>
+					</Variable>
+				</ConfigVars>
+			</InActiveStreamCorrsWithConfigVars>
+			<InActiveStreamCorrsWithConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+				<InactiveStreamCorrName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>True VP</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrName>
+				<InactiveStreamCorrDispName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>True VP</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrDispName>
+				<InactiveStreamCorrCLSID OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>{806CB8EE-2171-4a9e-A938-B6048A659276}</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrCLSID>
+				<InactiveStreamCorrVarDesc OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>:</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrVarDesc>
+				<InactiveStreamCorrImplSubst OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>Standard</Value>
+					<ValueType>Text</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrImplSubst>
+				<InactiveStreamCorrStatus OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrStatus>
+				<InactiveStreamCorrInUse OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrInUse>
+				<InactiveStreamCorrBulkProp OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrBulkProp>
+				<InactiveStreamCorrIsClone OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+					<Value>False</Value>
+					<ValueType>Boolean</ValueType>
+					<Status>Specified</Status>
+				</InactiveStreamCorrIsClone>
+				<ConfigVars OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+					<VariableCount OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+						<Value>1</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</VariableCount>
+					<Variable OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
+						<VarType OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Numeric</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarType>
+						<VarName OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>Ref.Temp.(C)</Value>
+							<ValueType>Text</ValueType>
+							<Status>Specified</Status>
+						</VarName>
+						<VarValue OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
+							<Value>37.7778</Value>
+							<ValueType>Real</ValueType>
+							<Status>Specified</Status>
+						</VarValue>
+					</Variable>
+				</ConfigVars>
+			</InActiveStreamCorrsWithConfigVars>
 			<CurrentlySelectedUnitOpCorrSetIndex OwnerType="SimCaseObject" OwnerName="Case" Type="Param">
 				<Value>1</Value>
 				<ValueType>Real</ValueType>
@@ -16012,6 +16987,53 @@
 		</DesktopLayout>
 		<DesktopLayout OwnerType="SimCaseObject" OwnerName="Case" Type="ParamSet">
 			<Desktop OwnerType="DesktopLayoutObject" OwnerName="" Type="ParamSet">
+				<Form OwnerType="DesktopLayoutObject" OwnerName="" Type="ParamSet">
+					<Style OwnerType="DesktopLayoutObject" OwnerName="" Type="Param">
+						<Value>Restored</Value>
+						<ValueType>Text</ValueType>
+						<Status>Specified</Status>
+					</Style>
+					<IconX OwnerType="DesktopLayoutObject" OwnerName="" Type="Param">
+						<Value>0</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</IconX>
+					<IconY OwnerType="DesktopLayoutObject" OwnerName="" Type="Param">
+						<Value>0</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</IconY>
+					<RestoredX OwnerType="DesktopLayoutObject" OwnerName="" Type="Param">
+						<Value>0</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</RestoredX>
+					<RestoredY OwnerType="DesktopLayoutObject" OwnerName="" Type="Param">
+						<Value>0</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</RestoredY>
+					<RestoredWidth OwnerType="DesktopLayoutObject" OwnerName="" Type="Param">
+						<Value>574</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</RestoredWidth>
+					<RestoredHeight OwnerType="DesktopLayoutObject" OwnerName="" Type="Param">
+						<Value>341</Value>
+						<ValueType>Real</ValueType>
+						<Status>Specified</Status>
+					</RestoredHeight>
+					<Object OwnerType="DesktopLayoutObject" OwnerName="" Type="Param">
+						<Value>FluidPkgMgr.300/CompList.300(Basis-1)</Value>
+						<ValueType>Text</ValueType>
+						<Status>Specified</Status>
+					</Object>
+					<MovesWithFrame OwnerType="DesktopLayoutObject" OwnerName="" Type="Param">
+						<Value>False</Value>
+						<ValueType>Boolean</ValueType>
+						<Status>Specified</Status>
+					</MovesWithFrame>
+				</Form>
 				<Form OwnerType="DesktopLayoutObject" OwnerName="" Type="ParamSet">
 					<Style OwnerType="DesktopLayoutObject" OwnerName="" Type="Param">
 						<Value>Restored</Value>
@@ -16177,7 +17199,7 @@
 					</Form>
 				</Desktop>
 				<PaletteIsVisible OwnerType="DesktopLayoutObject" OwnerName="" Type="Param">
-					<Value>True</Value>
+					<Value>False</Value>
 					<ValueType>Boolean</ValueType>
 					<Status>Specified</Status>
 				</PaletteIsVisible>
@@ -16198,12 +17220,12 @@
 						<Status>Specified</Status>
 					</DeltaFromLeftEdge>
 					<RestoredDeltaWidth OwnerType="DesktopLayoutObject" OwnerName="" Type="Param">
-						<Value>-158</Value>
+						<Value>-64</Value>
 						<ValueType>Real</ValueType>
 						<Status>Specified</Status>
 					</RestoredDeltaWidth>
 					<RestoredDeltaHeight OwnerType="DesktopLayoutObject" OwnerName="" Type="Param">
-						<Value>-18</Value>
+						<Value>-61</Value>
 						<ValueType>Real</ValueType>
 						<Status>Specified</Status>
 					</RestoredDeltaHeight>
